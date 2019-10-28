@@ -20,8 +20,11 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: php-example:${CICD_EXECUTION_SEQUENCE}
+      tag: php-example:qa${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
+      registry: gcr.io
 - name: Deploy
   steps:
   - applyYamlConfig:
       path: ./deploy/deployment.yaml
+notification: {}
