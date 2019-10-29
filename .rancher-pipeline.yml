@@ -22,9 +22,5 @@ stages:
       buildContext: .
       tag: php-example:qa${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: gcr.io
-- name: Deploy
-  steps:
-  - applyYamlConfig:
-      path: ./deploy/deployment.yaml
+      registry: gcr.io/imed-cl/
 notification: {}
