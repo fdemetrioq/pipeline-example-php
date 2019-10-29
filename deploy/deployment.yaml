@@ -28,7 +28,7 @@ spec:
         app: php-example
     spec:
       imagePullSecrets:
-      - name: pipeline-docker-registry
+      - name: gcr
       containers:
       - name: php
         image: ${CICD_IMAGE}:qa-${CICD_EXECUTION_SEQUENCE}
