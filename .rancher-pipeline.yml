@@ -22,5 +22,5 @@ stages:
       buildContext: .
       tag: php-example:qa${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: gcr.io/imed-cl/
+      registry: gcr.io/imed-cl
 notification: {}
