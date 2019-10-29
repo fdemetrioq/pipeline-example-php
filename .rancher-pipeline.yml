@@ -20,7 +20,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: imed-cl/php-example:${CICD_EXECUTION_SEQUENCE}
+      tag: imed-cl/php-example:qa-${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: gcr.io
 - name: Deploy
