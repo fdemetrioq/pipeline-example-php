@@ -4,9 +4,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: imed-cl/${CICD_GIT_REPO_NAME}:qa-${CICD_GIT_COMMIT}
+      tag: ${CICD_GIT_REPO_NAME}:qa-${CICD_GIT_COMMIT}
       pushRemote: true
-      registry: gcr.io
+      registry: gcr.io/imed-cl
 - name: Deploy
   steps:
   - applyYamlConfig:
