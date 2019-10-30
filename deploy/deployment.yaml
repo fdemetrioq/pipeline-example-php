@@ -25,7 +25,7 @@ spec:
   template:
     metadata:
       labels:
-        app: ${CICD_IMAGE}
+        app: php-example
     spec:
       imagePullSecrets:
       - name: gcr
