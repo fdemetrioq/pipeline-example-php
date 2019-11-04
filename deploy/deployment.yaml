@@ -31,6 +31,6 @@ spec:
       - name: gcr
       containers:
       - name: php
-        image: ${CICD_IMAGE}:qa-${CICD_GIT_COMMIT}
+        image: ${CICD_IMAGE}:$ENTORNO-${CICD_GIT_COMMIT}
         ports:
         - containerPort: 80
